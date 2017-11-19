@@ -16,7 +16,7 @@ module.exports.mockDB = () => {
         region: "us-east-2"
     });
 
-    var dynamodb = new aws.DynamoDB({
+    var dynamodb = new AWS.DynamoDB({
         endpoint: 'http://localhost:8000'
     });
 
