@@ -11,11 +11,15 @@ var dynaliteServer = dynalite({
 
 module.exports.mockDB = () => {
     AWS.config.update({
-        region: "us-west-2",
-        endpoint: "http://localhost:4567"
+        accessKeyId: "localAccessKey",
+        secretAccessKey: "localSecretAccessKey",
+        region: "us-east-2"
     });
 
-    var dynamodb = new AWS.DynamoDB();
+    var dynamodb = new aws.DynamoDB({
+        endpoint: 'http://localhost:8000'
+    });
+
 
     return new Promise((resolve, reject) => {
         dynaliteServer.listen(4567, function(err) {
