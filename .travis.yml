@@ -7,6 +7,5 @@ cache:
     - node_modules
 script: 
     - npm install -g serverless
-    - npm run install:dynamodb
-    - npm start
-    - npm test
+    - npm setup
+    - npm deploy
