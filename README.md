@@ -1,5 +1,8 @@
 # taco-gallery
-A sample project for a Serverless application
+
+[![Build Status](https://travis-ci.org/serverless-lambda/serverless-unit-test.svg?branch=master)](https://travis-ci.org/serverless-lambda/serverless-unit-test)
+
+A sample project for a Serverless application on how to setup unit test with serverless-offline plugin
 
 # its blog
 

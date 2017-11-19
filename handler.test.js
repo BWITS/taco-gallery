@@ -48,5 +48,6 @@ describe("Taco Gallery tests", function() {
     //     saveTaco(event, context, callback)
     // })
 
+    done();
 
 });
