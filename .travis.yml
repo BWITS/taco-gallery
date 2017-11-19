@@ -8,4 +8,6 @@ cache:
 script: 
     - npm install -g serverless
     - npm run setup
-    - npm run deploy
+    - npm run install:dynamodb
+    - npm start
+    - npm test
