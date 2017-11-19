@@ -29,24 +29,24 @@ describe("Taco Gallery tests", function() {
         hello(event, context, callback)
     })
 
-    it('should save a taco', function(done) {
+    // it('should save a taco', function(done) {
 
-        var event = {
-            "body": '{"name":"Al pastor","description": "Delicious taco!"}'
-        };
-        var context = {};
-        var callback = (ctx, data) => {
-            try {
-                console.log(data)
-                assert(data);
-                assert(data.statusCode == 200);
-            } catch (err) {
-                console.log(err)
-                done(err);
-            }
-        }
-        saveTaco(event, context, callback)
-    })
+    //     var event = {
+    //         "body": '{"name":"Al pastor","description": "Delicious taco!"}'
+    //     };
+    //     var context = {};
+    //     var callback = (ctx, data) => {
+    //         try {
+    //             console.log(data)
+    //             assert(data);
+    //             assert(data.statusCode == 200);
+    //         } catch (err) {
+    //             console.log(err)
+    //             done(err);
+    //         }
+    //     }
+    //     saveTaco(event, context, callback)
+    // })
 
 
 });
