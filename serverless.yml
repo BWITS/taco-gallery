@@ -6,6 +6,7 @@ provider:
   region: us-east-2
   stage: dev
   environment:
+    REGION: us-east-2
     TESTNUM: 27
     TESTSTR: hello
     AUTH0_DOMAIN: pfernandom.auth0.com
