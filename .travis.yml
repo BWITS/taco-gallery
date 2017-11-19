@@ -11,4 +11,5 @@ script:
     - npm run install:dynamodb
     - npm start
     - export AWS_REGION=us-east-2
+    - sleep 20
     - npm test
