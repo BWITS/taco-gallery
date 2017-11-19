@@ -7,4 +7,6 @@ cache:
     - node_modules
 script: 
     - npm install -g serverless
-    - sls offline start -r ap-southeast-2 --noTimeout
+    - npm run install:dynamodb
+    - npm start
+    - npm test
